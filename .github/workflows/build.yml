@@ -1,3 +1,4 @@
+cat > .github/workflows/build.yml << 'EOF'
 name: Build Multi-Platform Apps
 
 on:
@@ -27,9 +28,15 @@ jobs:
       
       - name: Build application
         run: |
-          pyinstaller --onefile --windowed --name document_viewer.py
+          pyinstaller --onefile --windowed --name DocumentViewer document_viewer.py
       
       - uses: actions/upload-artifact@v4
         with:
-          name: MyApp-${{ matrix.os }}
+          name: DocumentViewer-${{ matrix.os }}
           path: dist/*
+EOF
+
+# コミットしてプッシュ
+git add .github/workflows/build.yml
+git commit -m "Fix pyinstaller command syntax"
+git push
