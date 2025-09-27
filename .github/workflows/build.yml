@@ -35,8 +35,6 @@ jobs:
           name: DocumentViewer-${{ matrix.os }}
           path: dist/*
 EOF
-
-# コミットしてプッシュ
 git add .github/workflows/build.yml
-git commit -m "Fix pyinstaller command syntax"
+git commit -m "Fix YAML syntax error"
 git push
