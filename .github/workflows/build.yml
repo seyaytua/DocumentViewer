@@ -1,4 +1,3 @@
-cat > .github/workflows/build.yml << 'EOF'
 name: Build Multi-Platform Apps
 
 on:
@@ -34,7 +33,3 @@ jobs:
         with:
           name: DocumentViewer-${{ matrix.os }}
           path: dist/*
-EOF
-git add .github/workflows/build.yml
-git commit -m "Fix YAML syntax error"
-git push
