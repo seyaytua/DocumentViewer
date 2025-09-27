@@ -237,7 +237,7 @@ class DocumentViewer(QMainWindow):
 
     def init_ui(self):
         """Initialize the UI components and layout."""
-        self.setWindowTitle("Document Viewer v1.1 　|   →/← : 前後のページ    |    Ctrl+→/← : 前後の文書   |   Ctrl+ +/- : ズームイン/アウト    :  新宿山吹ICT委員会")
+        self.setWindowTitle("Document Viewer v1.1 　　|　   →/← : 前後のページ    　|　    Ctrl+→/← : 前後の文書   　|　   Ctrl+ +/- : ズームイン/アウト    　:　  新宿山吹ICT委員会")
         self.setGeometry(100, 100, 1500, 900)
 
         central_widget = QWidget()
@@ -485,9 +485,7 @@ class DocumentViewer(QMainWindow):
 
     def create_menu_bar(self):
         menubar = self.menuBar()
-        view_menu = menubar.addMenu('表示')
-        view_menu1 = menubar.addMenu('→/← : 前後のページ')        
-        view_menu2 = menubar.addMenu('Ctrl+→/← : 前後の文書')        
+        view_menu = menubar.addMenu('表示')      
         actions_data = [
             ('サイドバー表示/非表示', 'Ctrl+B', self.toggle_sidebar),
             ('コントロールパネル表示/非表示', 'Ctrl+P', self.toggle_control_panel),
