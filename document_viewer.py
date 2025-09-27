@@ -151,6 +151,8 @@ class UsageDialog(QDialog):
         usage_text = """
 【Document Viewer 使い方】
 
+⭐️なぜかコントロールパネルが最初に起動しません。　Ctrl+P　を先に押してください！
+
 ■ 基本操作
 • フォルダ選択: 左上の「フォルダ選択」ボタンでドキュメントフォルダを指定
 • 対応形式: PDF、画像(PNG/JPG/BMP/GIF/TIFF)、Office文書(DOCX/XLSX/PPTX)
